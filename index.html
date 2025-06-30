@@ -157,7 +157,16 @@
        
     }
    @media (max-width: 768px) {
-    .introducao,
+    .introducao {
+        margin-left: 0 !important;
+        width: 90% !important;
+        margin: 1rem auto;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        position: relative;
+        z-index: 2; /* Garante que ela fique acima de outros elementos */
+    }
+
     #caixa-1-sobre-mim,
     #caixa-1-minhas-habilidades,
     #caixa-1-meus-projetos,
@@ -167,6 +176,8 @@
         margin: 1rem auto;
         box-sizing: border-box;
         overflow-wrap: break-word;
+        position: relative;
+        z-index: 1; /* Garante que fiquem abaixo da introdução */
     }
 
     .imagem-minha {
@@ -191,6 +202,7 @@
 html {
     scroll-behavior: smooth;
 }
+
      
 </style>
 <body>
