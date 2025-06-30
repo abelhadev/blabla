@@ -157,27 +157,16 @@
        
     }
    @media (max-width: 768px) {
-    .introducao {
-        margin-left: 0 !important;
-        width: 90% !important;
-        margin: 1rem auto;
-        box-sizing: border-box;
-        overflow-wrap: break-word;
-        position: relative;
-        z-index: 2; /* Garante que ela fique acima de outros elementos */
-    }
-
+    .introducao,
     #caixa-1-sobre-mim,
     #caixa-1-minhas-habilidades,
     #caixa-1-meus-projetos,
     #caixa-1-curiosidades {
-        margin-left: 0 !important;
-        width: 90% !important;
-        margin: 1rem auto;
+        margin-left: 260px !important; /* garante espaço para o menu */
+        width: calc(100% - 280px); /* adapta o conteúdo à tela */
+        margin-top: 1rem;
         box-sizing: border-box;
         overflow-wrap: break-word;
-        position: relative;
-        z-index: 1; /* Garante que fiquem abaixo da introdução */
     }
 
     .imagem-minha {
@@ -199,10 +188,33 @@
     }
 }
 
-html {
-    scroll-behavior: smooth;
+/* Garante que o conteúdo nunca sobreponha o menu (em telas grandes também) */
+.introducao,
+#caixa-1-sobre-mim,
+#caixa-1-minhas-habilidades,
+#caixa-1-meus-projetos,
+#caixa-1-curiosidades {
+    margin-left: 260px; /* compensação do menu fixo */
+    width: calc(100% - 280px); /* largura total menos o menu */
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    position: relative;
+    z-index: 1;
 }
 
+/* Garante que o menu sempre apareça acima */
+#menu-navegacao {
+    z-index: 10;
+}
+
+/* Garante que o footer apareça no fim */
+footer {
+    position: relative;
+    z-index: 2;
+    margin-left: 260px;
+    width: calc(100% - 280px);
+    box-sizing: border-box;
+}
      
 </style>
 <body>
