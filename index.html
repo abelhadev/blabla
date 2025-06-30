@@ -157,13 +157,40 @@
        
     }
    @media (max-width: 768px) {
-    #menu-navegacao {
-        position: static;
-        width: 100%;
-        height: auto;
+    .introducao,
+    #caixa-1-sobre-mim,
+    #caixa-1-minhas-habilidades,
+    #caixa-1-meus-projetos,
+    #caixa-1-curiosidades {
+        margin-left: 0 !important;
+        width: 90% !important;
+        margin: 1rem auto;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+    }
+
+    .imagem-minha {
+        width: 150px;
+        height: 150px;
+    }
+
+    #titulo1 {
+        font-size: 2rem;
+    }
+
+    #meu-nome {
+        font-size: 1.2rem;
+    }
+
+    body {
+        font-size: 110%;
         border-width: 5px;
     }
-   }
+}
+
+html {
+    scroll-behavior: smooth;
+}
      
 </style>
 <body>
