@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<style>
+   
+    div{
+        box-sizing: border-box;
+    }
+    #titulo1{
+        font: size 80px;
+        font-style:sans-serif;
+    }
+    body{
+        font-style: Serif; 
+        border: solid 10px darkgoldenrod;
+        margin:0%;
+        text-align:center;
+        background-color: rgb(17, 16, 16) ;
+        color:white;
+        font-size:150%;
+    }
+
+    footer{
+        background-color: darkgoldenrod;
+        padding:10px darkgoldenrod;
+        border: 40px darkgoldenrod;
+        color:black;
+        margin: 0%;
+        padding: 1rem 0;
+        text-align: center;
+        background-image: url('https://media.istockphoto.com/id/1403550771/pt/foto/bienen.jpg?s=612x612&w=0&k=20&c=fAjmiFXMd9b_lZuAWl5UQxwRit2rWzijSs5uZR4Nl3o=');
+
+    }
+
+    ul{
+        list-style: none;
+        
+    }
+
+    .introducao{
+        border-color:yellow;
+        border-width: 10%;
+        border-style: outset ;
+        background-color:black;
+        padding: 4%;
+        background-image: url('https://storage.googleapis.com/jm-gcp-bethestory-p-12po-bucket/uploads/2019/10/bees-in-a-flower-field.jpg');
+        color:black;
+        position:relative;
+        margin-left: 300px;
+    }
+
+    .imagem-minha{
+        border-radius:50%;
+        border-style: double;
+        border-color: darkgoldenrod;
+        width: 300px;
+        height: 300px;
+    }
+    
+
+    #menu-navegacao {
+     
+        width: 60px;
+        border:solid 20px yellow;
+        background-color: darkgoldenrod;
+        border-width:10%;
+        height:100%;
+        width:250px;
+        top:0;
+        position:fixed;
+        text-align: center;
+        box-sizing: inherit;
+    }
+
+    #menu-navegacao li{
+        text-align:center;
+        line-height:1.8;
+    }
+
+    #caixa-1-sobre-mim{
+        padding: 8px 12px;
+        width:auto;
+        background-color: honeydew;
+        box-sizing: border-box;
+        -webkit-text-size-adjust:100%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        color:black;
+        position: relative;
+        text-align:center;
+        margin-left: 300px;
+        border:solid 20px yellow;
+       
+    }
+
+     #caixa-1-minhas-habilidades{
+        padding: 8px 12px;
+        width:auto;
+        background-color: honeydew;
+        box-sizing: border-box;
+        -webkit-text-size-adjust:100%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        color:black;
+        position: relative;
+        text-align:center;
+        margin-left: 300px;
+        border:solid 20px yellow;
+       
+    }
+
+     #caixa-1-meus-projetos{
+        padding: 8px 12px;
+        width:auto;
+        background-color: honeydew;
+        box-sizing: border-box;
+        -webkit-text-size-adjust:100%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        color:black;
+        position: relative;
+        text-align:center;
+        margin-left: 300px;
+        border:solid 20px yellow;
+       
+    }
+
+     #caixa-1-curiosidades{
+        padding: 8px 12px;
+        width:auto;
+        background-color: honeydew;
+        box-sizing: border-box;
+        -webkit-text-size-adjust:100%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+        color:black;
+        position: relative;
+        text-align:center;
+        margin-left: 300px;
+        border:solid 20px yellow;
+       
+    }
+     @media (max-width: 768px){
+        #menu-navegacao {
+            position: static;
+            width: 100%;
+            height: auto;
+            border-width: 5px;
+        }
+    }   
+</style>
+<body>
+    
+    <div id="introducao-minha" class="introducao">
+        <h1 id="titulo1">Landing Page</h1>
+        <h2 id="meu-nome">Ana Luíza de Aragão Matos Teixeira, aka Abelhadev</h2>
+        <img src="https://avatars.githubusercontent.com/u/168055181?v=4" id="imagem-minha" class="imagem-minha" alt="imagem minha">
+    </div>
+    <div id="menu-navegacao">
+        <nav>
+            <ul id="itens-menu-navegacao">
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Habilidades</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Curiosidades</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="caixa-1-sobre-mim">
+        <h2>Sobre mim</h2>
+        <div id="caixa-2-sobre-mim">
+            <p id="texto-sobre-mim"> Sou conhecida pelo user Abelhadev e atualmente possuo apenas Github, Linkedin e Kaggle.<br>
+            Estudo Análise e Desenvolvimentos de Sistemas na Unicesumar e estou estudando python para Análise de Dados. Sou uma entry-level Data Analyst com certificado da Google.
+            </p>
+        </div>
+    </div>
+    <div id="caixa-1-minhas-habilidades">
+        <h3>Minhas habilidades</h3>
+        <div id="caixa-2-minhas habilidades">
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>Excel iniciante</li>
+            </ul>
+        </div>
+    </div>
+    <div id="caixa-1-meus-projetos">
+        <h3>Meus projetos</h3>
+        <div id="caixa-2-meus-projetos">
+            <ul>
+                <li><a href="">Projeto de Análise de Dados realizado em curso da Google</a></li>
+                <li>R</li>
+                <li>Excel iniciante</li>
+            </ul>
+        </div>
+    </div>
+    <div id="caixa-1-curiosidades">
+        <h3>Curiosidades sobre mim:</h3>
+        <div id="caixa-2-curiosidades">
+            <ul>
+                <li><p>Eu gosto de matemática e desejo estudar física</p></li>
+                <li><p>Gosto de abelhas</p></li>
+                <li><p>Eu já escrevi um artigo para a DIO</p></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>Contato: abelhadev12253@gmail.com</br></p>
+    <p>@Abelhadev</p>
+</footer>
+</html>
