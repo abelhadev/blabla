@@ -157,16 +157,23 @@
        
     }
    @media (max-width: 768px) {
+    /* Reduz a largura da barra lateral apenas em telas pequenas */
+    #menu-navegacao {
+        width: 80px;
+    }
+
+    /* Ajusta as divs principais para respeitarem o novo espaço */
     .introducao,
     #caixa-1-sobre-mim,
     #caixa-1-minhas-habilidades,
     #caixa-1-meus-projetos,
     #caixa-1-curiosidades {
-        margin-left: 260px !important; /* garante espaço para o menu */
-        width: calc(100% - 280px); /* adapta o conteúdo à tela */
-        margin-top: 1rem;
+        margin-left: 100px;
+        width: calc(100% - 120px);
         box-sizing: border-box;
         overflow-wrap: break-word;
+        position: relative;
+        z-index: 1;
     }
 
     .imagem-minha {
@@ -188,34 +195,11 @@
     }
 }
 
-/* Garante que o conteúdo nunca sobreponha o menu (em telas grandes também) */
-.introducao,
-#caixa-1-sobre-mim,
-#caixa-1-minhas-habilidades,
-#caixa-1-meus-projetos,
-#caixa-1-curiosidades {
-    margin-left: 260px; /* compensação do menu fixo */
-    width: calc(100% - 280px); /* largura total menos o menu */
-    box-sizing: border-box;
-    overflow-wrap: break-word;
-    position: relative;
-    z-index: 1;
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
 }
 
-/* Garante que o menu sempre apareça acima */
-#menu-navegacao {
-    z-index: 10;
-}
-
-/* Garante que o footer apareça no fim */
-footer {
-    position: relative;
-    z-index: 2;
-    margin-left: 260px;
-    width: calc(100% - 280px);
-    box-sizing: border-box;
-}
-     
 </style>
 <body>
     
