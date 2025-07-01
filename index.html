@@ -157,19 +157,19 @@
        
     }
    @media (max-width: 768px) {
-    /* Reduz a largura da barra lateral apenas em telas pequenas */
+    /* Reduz a largura da barra lateral */
     #menu-navegacao {
         width: 80px;
     }
 
-    /* Ajusta as divs principais para respeitarem o novo espaço */
+    /* Move as divs de conteúdo ainda mais para a direita */
     .introducao,
     #caixa-1-sobre-mim,
     #caixa-1-minhas-habilidades,
     #caixa-1-meus-projetos,
     #caixa-1-curiosidades {
-        margin-left: 100px;
-        width: calc(100% - 120px);
+        margin-left: 140px;
+        width: calc(100% - 160px); /* garante espaço e evita estouro */
         box-sizing: border-box;
         overflow-wrap: break-word;
         position: relative;
@@ -195,11 +195,9 @@
     }
 }
 
-/* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
-
 </style>
 <body>
     
